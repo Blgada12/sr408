@@ -2,10 +2,56 @@
 <html>
 <head>
     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>설문에 참가해주셔서 감사합니다</title>
     <link rel="stylesheet" href="css.css"> 
+    <script
+        src="https://code.jquery.com/jquery-1.9.1.min.js"
+        integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
     <body>
+<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          <a class="navbar-brand" href="submit.html">설문</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <form class="navbar-form navbar-left">
+              <ul class="navbar-form navbar-nav">
+                <li style="text-align:center;"><a href="index.html">웹으로</a>
+                  </li>
+              </ul>
+                
+            </form>
+            <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="이메일" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="비밀번호" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">로그인</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+        
+        <br/>
+
+        
+        
         <fieldset>
             <legend>1차</legend>
             <h2>기본 정보에 대한 설문입니다.</h2>
@@ -20,6 +66,7 @@
         생일 : <input type="date"><br />
         E-mail : <input type="email"placeholder="example@naver.com">
             </fieldset>
+        <br /><br />
         <fieldset>
             <legend>2차</legend>
             <h2>개인 성향에 대한 설문입니다.</h2>
@@ -31,8 +78,7 @@
         </fieldset>
             
         
-        <br /><br />
+        <br /><br /><br /><br />
 <div align="center" style="text-color:gray"><del>실제 서버에 전송되진 않습니다!</del></div>
-        <div align="right"><a href="index.html"title="메인 페이지로">메인 페이지로 돌아가기</a></div>
     </body>
 </html>
