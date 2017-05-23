@@ -12,6 +12,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="blogger.png">
+    <style>
+        #menuover li:nth-child(2n):hover {
+            background-color: aquamarine
+        }
+        #menuover li:nth-child(2n+1):hover {
+            background-color: chartreuse
+        }
+        
+        body {
+            background-color: aliceblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -157,7 +169,7 @@
                         <div class="panel-heading">
                             <h3 class="panel-title">Contents</h3>
                         </div>
-                        <div class="panel-body">
+                        <div id="menuover" class="panel-body">
                             <ol type="I">
                                 <li><a href="#gg">웹프로그래밍 순서</a></li>
                                 <li><a href="#ad">자주가는 주소</a></li>
@@ -188,9 +200,9 @@
                                 <li>html5 - <b>완료</b></li>
                                 <li>css - <b>완료</b></li>
                                 <li>부트스트랩 기초 - <b>완료</b></li>
-                                <li>부트스트랩 응용 - <b>진행중</b></li>
-                                <li>자바스크립트</li>
-                                <li>노드.js</li>
+                                <li>부트스트랩 응용 - <b>완료</b></li>
+                                <li>자바스크립트 - <b>완료</b></li>
+                                <li>노드.js - <b>보류</b></li>
                             </ol>
                             예상 소요 시간 : <b>2017년 5월</b>
                         </div>
@@ -257,7 +269,7 @@
                             <b>Blgada_1.0.x</b>
                             <ul>
                                 <li>베타버전으로 부트스트랩 실습은 마무리가 되었다.</li>
-                            <del><b>Blgada12_x.xx</b><ul>
+                                <del><b>Blgada12_x.xx</b><ul>
                             <li>이 버전은 개발자의 실수로 입력한 약간의 오류입니다.</li></ul></del>
                         </div>
                     </div>
@@ -802,15 +814,15 @@
                                         <div class="panel-body" align="left">
                                             <iframe width="100%" src="https://www.youtube.com/embed/USCNNob5hkA" frameborder="0" allowfullscreen></iframe>
                                             <p>
-                                            <b>친구하고싶어</b>(학원생활부) - 학교생활OP
+                                                <b>친구하고싶어</b>(학원생활부) - 학교생활OP
                                             </p>
                                             <iframe width="100%" src="https://www.youtube.com/embed/izE574v4wrA" frameborder="0" allowfullscreen></iframe>
                                             <p>
-                                            <b>푸른 하늘의 랩소디</b>(fhana) - 코바야시네 메이드래곤OP
+                                                <b>푸른 하늘의 랩소디</b>(fhana) - 코바야시네 메이드래곤OP
                                             </p>
                                             <iframe width="100%" src="https://www.youtube.com/embed/bMP7LsjVZlw" frameborder="0" allowfullscreen></iframe>
                                             <p>
-                                            <b>가브리엘 드롭킥</b> - 가브리엘 드롭아웃OP
+                                                <b>가브리엘 드롭킥</b> - 가브리엘 드롭아웃OP
                                             </p>
                                         </div>
                                     </div>
@@ -825,9 +837,16 @@
     <div class="container theme-showcase" role="main">
         <footer>
             <div align="center"><a href="#상단" title="상단으로"><button type="button" class="btn btn-success">상단으로</button></a></div>
-            <br /><br /><br />
-            <div align="left">&copy; Blgada 2017</div>
-            <div align="right">1.0.0</div>
+            <br />
+            <hr /><br />
+            <footer>
+                <hr>
+                <div id="copyright">
+                    Copyright COPYRIGHT(C) NGDB_blgada. ALL RIGHT RESERVED<br> beta-1.0.1 ver
+
+                </div>
+            </footer>
+
         </footer>
     </div>
 
