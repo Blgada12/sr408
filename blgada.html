@@ -6,12 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Blgada-로그인 페이지</title>
+    <title>Blgada-자기소개 페이지</title>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="blogger.png">
+    <style>
+        @font-face {
+            font-family: 'current';
+            src: url(./font/amsterdam.ttf) format('truetype');
+        }
+        
+        body {
+            font-family: current;
+            font-size: 20px;
+            background-color: aliceblue;
+        }
+        
+        a {
+            color: cornflowerblue
+        }
+        
+        .main {
+            padding: 20px;
+            background-color: #eeeeee;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -31,13 +54,13 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <form class="navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="login.html">로그인</a></li>
-                        <li><a href="rg.html">회원가입</a></li>
+                        <li class="active"><a href="blgada.html">개발자 상세</a></li>
+                        <li><a href="lab1.html">연구활동</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">정보<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="https://github.com/Blgada12/sr408" target="_blank">웹페이지 상세</a></li>
-                                <li><a href="http://sunrinwiki.layer7.kr/index.php/17%ED%95%99%EB%B2%88_%EA%B9%80%EB%8F%84%ED%98%84" target="_blank">개발자 정보 상세</a></li>
+                                <li><a href="http://blgada12.tistory.com" target="_blank">개발자 티스토리</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -45,33 +68,42 @@
             </div>
         </div>
     </nav>
-    <div class="container theme-showcase" role="main">
-        <div class="bs-example bs-example-standalone" data-example-id="dismissible-alert-js">
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong>베타입니다!</strong> 로그인 기능 자체는 미구현입니다!
+    <section>
+        <div class="container theme-showcase" role="main">
+            <div class="main">
+                <h2>기본 정보</h2>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="img/sagiri.jpg" title="사기리짜응" width="200px">
+                </div>
+                <div class="col-xs-12 col-sm-8" style="height:200px">
+                    <ul>
+                        <li>이름 : 김도현</li>
+                        <li>닉네임 : NGDB;blgada</li>
+                        <li>전화번호 : 010-3128-2490</li>
+                        <li>이메일 : blgada12@naver.com</li>
+                        <li><a href="http://blgada12.tistory.com" target="_blank">티스토리 블로그</a></li>
+                    </ul>
+                </div>
+                <h2>상세 정보</h2>
+                <div>
+                    추가예정
+                </div>
+
             </div>
         </div>
-        <div class="jumbotron" align="center">
-            <form class="form-signin" action="/login_receiver" method="post">
-                <h2 class="form-signin-heading">
-                    <div align="center">로그인 페이지</div>
-                </h2>
-                <label for="inputID" class="sr-only">아이디</label>
-                <input name="ID" type="text" id="inputID" class="form-control" placeholder="아이디" required autofocus>
-                <label for="inputPassword" class="sr-only">비밀번호</label>
-                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="비밀번호" required>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button><br>
-            </form>
-        </div>
-    </div>
+    </section>
 
     <div class="container theme-showcase" role="main">
         <footer>
             <div align="center"><a href="#상단" title="상단으로"><button type="button" class="btn btn-success">상단으로</button></a></div>
-            <br /><br /><br />
-            <div align="left">&copy; Blgada 2017</div>
-            <div align="right">1.0.0</div>
+            <br /><br />
+            <footer>
+                <hr>
+                <div id="copyright">
+                    Copyright COPYRIGHT(C) NGDB_blgada. ALL RIGHT RESERVED<br> alpha-1.1.0 ver
+
+                </div>
+            </footer>
         </footer>
     </div>
 
